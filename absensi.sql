@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `absensi` (
   CONSTRAINT `absensi_ibfk_2` FOREIGN KEY (`jadwal_id`) REFERENCES `jadwal` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table absenrfid.absensi: ~2 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table absenrfid.jadwal
 CREATE TABLE IF NOT EXISTS `jadwal` (
@@ -51,15 +51,7 @@ CREATE TABLE IF NOT EXISTS `jadwal` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table absenrfid.jadwal: ~8 rows (approximately)
-INSERT INTO `jadwal` (`id`, `matkul`, `dosen`, `nidn`, `hari`, `mulai`, `selesai`) VALUES
-	(1, 'Keamanan Informasi dan Jaringan', 'Walidy Rahman Hakim M.Kom', '-', 'Senin', '07:30:00', '10:00:00'),
-	(2, 'Pengolahan Citra Digital', 'Nur Muniroh S.T, M.Kom', '-', 'Senin', '10:15:00', '12:45:00'),
-	(3, ' Metode Numerik', 'Fadillah Istiqomah M.Pd', '-', 'Selasa', '07:30:00', '08:00:00'),
-	(4, 'Internet of Things', 'Beny Riswanto, M.Kom', '0619029001', 'Selasa', '09:10:00', '12:45:00'),
-	(5, 'Kriptografi', 'Kusnana M.Kom', '-', 'Rabu', '07:30:00', '11:05:00'),
-	(6, 'Statistik dan Probabilitas', 'Eko Sutrisno, M.Pd', '-', 'Kamis', '07:30:00', '10:00:00'),
-	(7, 'Sistem Pendukung Keputusan', 'Slamet Cahyo Edy Sahputro M.Kom', '-', 'Kamis', '10:15:00', '12:45:00');
+-- Data exporting was unselected.
 
 -- Dumping structure for table absenrfid.mahasiswa
 CREATE TABLE IF NOT EXISTS `mahasiswa` (
@@ -76,13 +68,7 @@ CREATE TABLE IF NOT EXISTS `mahasiswa` (
   UNIQUE KEY `unique_nim` (`nim`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table absenrfid.mahasiswa: ~6 rows (approximately)
-INSERT INTO `mahasiswa` (`id`, `uid`, `nokartu`, `nama`, `nim`, `kelas`, `jenis_kelamin`) VALUES
-	(1, '676fe791856d2', 'E5803E2', 'Agus Sudarmanto', '225520010', '1TI5A', 'Laki-Laki'),
-	(2, '676fe7b6750d2', 'CA8295AC', 'Dwi Afifah', '225520008', '1TI5A', 'Perempuan'),
-	(3, '676fe7ce324e5', '8A4160AC', 'Ratna Tri Wahyuni', '225520032', '1TI5A', 'Perempuan'),
-	(4, '676fe7e5a9f62', '8A83A0AC', 'Retno Kinasih', '225520048', '1TI5A', 'Perempuan'),
-	(5, '676fe7fd7b321', '49C2C92', 'Rina Puji Lestari', '225520033', '1TI5A', 'Perempuan');
+-- Data exporting was unselected.
 
 -- Dumping structure for table absenrfid.status
 CREATE TABLE IF NOT EXISTS `status` (
@@ -91,9 +77,7 @@ CREATE TABLE IF NOT EXISTS `status` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table absenrfid.status: ~0 rows (approximately)
-INSERT INTO `status` (`id`, `mode`) VALUES
-	(1, '2');
+-- Data exporting was unselected.
 
 -- Dumping structure for table absenrfid.tmprfid
 CREATE TABLE IF NOT EXISTS `tmprfid` (
@@ -102,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `tmprfid` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table absenrfid.tmprfid: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table absenrfid.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -116,9 +100,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table absenrfid.users: ~1 rows (approximately)
-INSERT INTO `users` (`id`, `nama`, `username`, `email`, `password`) VALUES
-	(1, 'Admin', 'admin', 'admin@admin.com', '$2y$10$zoYlyI3GWufGmbYjpngKMOS2Oy8dvFqgfljEzBKpnDN3pFh8QxyIy');
+-- Data exporting was unselected.
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
